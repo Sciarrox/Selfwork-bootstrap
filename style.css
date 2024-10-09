@@ -1,0 +1,103 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+header.hero {
+    height: 100vh;
+    background-image: url('https://i.ebayimg.com/00/s/MTUwMFgxMDA3/z/ejMAAOSwo3diLgD-/$_57.JPG?set_id=8800005007');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+img {
+    height: 50vh;
+    margin: 20px;
+}
+
+.custom {
+    padding: 40px;
+    border:3px solid black;
+}
+
+.img1 {
+    height:20vh;
+}
+
+html, body {
+    overflow-x: hidden;
+    /* Disabilita lo scroll orizzontale */
+}
+
+@media only screen and (max-width: 768px) {
+    /* Stili specifici per schermi fino a 768px di larghezza (smartphone e tablet) */
+
+    /* Esempio: Modifica del font della Hero Section */
+    .hero h1 {
+        font-size: 2rem;
+        /* Riduci la dimensione del titolo */
+    }
+
+    .hero p {
+        font-size: 1rem;
+        /* Riduci la dimensione del paragrafo */
+    }
+
+    /* Esempio: Imposta larghezza colonne su 100% per evitare sovrapposizioni */
+    .col-12,
+    .col-md-6,
+    .col-lg-4 {
+        width: 90%;
+        /* Rendi le colonne a larghezza piena su piccoli schermi */
+        margin-bottom: 20px;
+        /* Aggiungi margine tra le colonne */
+    }
+
+    /* Ridimensiona le immagini in modo che non escano fuori dai limiti */
+    img {
+        width: 100%;
+        /* Immagini responsive */
+        height: auto;
+        /* Mantieni proporzioni corrette */
+    }
+
+    /* Modifica la navbar */
+    .navbar {
+        padding: 10px;
+        /* Riduci il padding della navbar */
+    }
+
+    /* Modifica il form */
+    #work-form {
+        padding: 10px;
+        /* Riduci il padding del form su schermi piccoli */
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        /* Centra il testo nel footer su schermi piccoli */
+    }
+
+    footer .col-md-6 {
+        text-align: center;
+        /* Centra anche il contenuto delle colonne nel footer */
+    }
+
+   .custom {
+    border: none;
+   }
+
+
+
+
+}
